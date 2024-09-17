@@ -47,7 +47,7 @@ docker-compose restart
 1. You can set your `DOMAIN`, etc. at [ssh_server/config/.env](https://github.com/nggit/addr/blob/main/ssh_server/config/.env)
 
 ### Configure service_nginx_proxy
-1. Set up your homepage by creating `index.html` in [nginx/www/](https://github.com/nggit/addr/blob/main/nginx/www)`DOMAIN`. E.g. *nginx/www/you.com/index.html*.
+1. Set up your homepage by creating an `index.html` under [nginx/www/](https://github.com/nggit/addr/blob/main/nginx/www)`DOMAIN`/ directory. E.g. *nginx/www/you.com/index.html*.
 3. You can set `ssl_certificate`, and `listen` 443 in [nginx/nginx.conf](https://github.com/nggit/addr/blob/main/nginx/nginx.conf)
 
 ## License
