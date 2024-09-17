@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://localhost/" />
+        <title>localhost</title>
+        <style>
+            body {
+                max-width: 625px;
+                margin: 0 auto;
+                padding: 0;
+                font-family: sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            .container {
+                padding: 2%;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0077cc;
+            }
+
+            code {
+                padding: .2em .4em;
+            }
+
+            code,
+            pre {
+                background-color: #f0f0f0;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+
+            pre,
+            address {
+                padding: 8px;
+            }
+
+            code,
+            pre,
+            address {
+                font-size: .875em;
+            }
+
+            address {
+                text-align: center;
+                color: #777;
+            }
+
+            hr {
+                margin: 2% 0;
+                border: 0;
+                border-top: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>localhost</h1>
+            <p>Access your local apps publicly through our free subdomains. No propietary client installation is required! Simply use the <code>ssh</code> command, or another <a href="https://en.wikipedia.org/wiki/Comparison_of_SSH_clients" target="_blank">SSH client</a>. </p>
+            <p>
+            <pre>$ ssh -R 80:localhost:8080 your-name@localhost</pre>
+            <p>Then you can access <b>localhost:8080</b> from <b>your-name.localhost</b>. </p>
+            <p>If you get <code>Permission denied (publickey)</code>, you may have to generate a public key: </p>
+            <p>
+            <pre>$ ssh-keygen -t rsa -b 2048</pre>
+            </p>
+            <h2>Custom Domains</h2>
+            <p>To use a custom domain, please replace <b>your-name</b> part with <b>your.domain.com</b>. </p>
+            <p>Then go to your domain's DNS management and point <b>your.domain.com</b> using <code>CNAME</code> to <b>your.domain.com.localhost</b>. </p>
+            <h2>Privacy</h2>
+            <p>We only store your SSH username and public key fingerprint for routing purposes. We do not record any of your traffic.</p>
+            <hr />
+            <address title="Powered by addr">addr.my.id</address>
+        </div>
+    </body>
+</html>
